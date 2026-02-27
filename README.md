@@ -120,16 +120,6 @@ python server.py
 ```
 Open **http://localhost:5000** in your browser.
 
----
-
-## 🧪 How It Works (The Code)
-
-- **`agent.py`**: The brain. Contains the 7-layer diagnostic logic and rewrite strategies.
-- **`server.py`**: The interface. A Flask-based SRE dashboard for interacting with the agent.
-- **`benchmark.py`**: The proof. Runs statistical analysis (10-run averages) to verify speedups.
-
----
-
 ## 🤝 Contributing
 
 We welcome PRs! Areas to improve:
