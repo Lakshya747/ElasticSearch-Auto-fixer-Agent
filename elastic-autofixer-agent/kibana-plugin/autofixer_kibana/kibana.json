@@ -1,0 +1,8 @@
+{
+  "id": "autofixerKibana",
+  "version": "1.0.0",
+  "server": true,
+  "ui": true,
+  "requiredPlugins": ["navigation", "data", "esUiShared"],
+  "optionalPlugins": []
+}

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  autofixer-backend:
+    build: ./backend
+    container_name: autofixer-brain
+    ports:
+      - "8000:8000"
+    environment:
+      - ELASTIC_CLOUD_ID=${ELASTIC_CLOUD_ID}
+      - ELASTIC_API_KEY=${ELASTIC_API_KEY}
+      - ELASTIC_ENDPOINT=${ELASTIC_ENDPOINT}
+      - INFERENCE_MODEL_ID=${INFERENCE_MODEL_ID}
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  # Note: Kibana Plugin is usually built into Kibana, 
+  # so we don't containerize the frontend separately here.
+  # We assume Kibana is running elsewhere (Cloud or local dev).
