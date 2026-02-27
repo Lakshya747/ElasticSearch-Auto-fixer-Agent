@@ -141,14 +141,9 @@ We welcome PRs! Areas to improve:
 
 ## 📄 License
 
-Licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+Licensed under the **MIT License**.
 
 ---
 
 <div align="center">
 
-### **Turn your Elasticsearch cluster into a self-healing system.**
-
-Built for the **ESAB Hackathon 2025**.
-
-</div>
